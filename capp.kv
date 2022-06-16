@@ -1,0 +1,17 @@
+#:import MapView kivy.garden.mapview.MapView
+#:import GeoJsonMapLayer mapview.geojson.GeoJsonMapLayer
+
+<BoxLayout>:
+    MapView:
+        lat: 43.473178
+        lon: 5.438990
+        zoom: 20
+        MapMarkerPopup:
+            source: "marker.png"
+            lat: 43.473178
+            lon: 5.438990
+        GeoJsonMapLayer:
+            source: "20210917.json"
+
+
+            
